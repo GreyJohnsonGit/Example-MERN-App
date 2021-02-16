@@ -3,7 +3,7 @@ const MongoClient = require('mongodb').MongoClient;
 const cors = require('cors');
 
 //This is Grey's actual database. Make your own Atlas account for your own project. You should never make keys like this public.
-const uri = "mongodb+srv://dbUser:dbUserPassword@cluster0.x7kwa.mongodb.net/ExampleAppDb?retryWrites=true&w=majority";
+const uri = 'mongodb uri string';
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
     if (err) {
